@@ -114,7 +114,8 @@ mutation{
 
 ## If You find the following message, please do the follow the step to fixed
 
-NOTE: find this message
+NOTE: 
+If you found this message
 
 ```bash
 library: 'digital envelope routines',
