@@ -20,6 +20,7 @@ Assignment project from BetterHR Interview
 - Enter `composer install` (assuming you have `composer` and its related packages installed and or configured)
 - Rename `.env.example`  to `.env` (This contains the app configs and databases settings)
 - Enter `php artisan migrate` to run migration  
+- Enter `php artisan db:seed` for test data
 - Enter `npm install`
 - Enter `npm run dev`
 - Enter `php artisan serve` to start application
@@ -30,7 +31,7 @@ Assignment project from BetterHR Interview
 Login:
 mutation {
   login(
-    input: { username: "CreatUser", password: "CreatUserPassword" }
+    input: { username: "admin@email.com", password: "12345678" }
   ) {
     access_token
     refresh_token
@@ -40,8 +41,6 @@ mutation {
       id
       email
       name
-      created_at
-      updated_at
     }
   }
 }
@@ -87,7 +86,7 @@ mutation{
 Update employee :
 mutation{
 	updateEmployee(
-	    id : 12
+	    id : 8
 	    name : "U Kyaw Kyaw"
 	    age : 23
 	    job : "Sales"
