@@ -11,6 +11,7 @@ Assignment project from BetterHR Interview
 * [Laravel Passport 9.4]
 * ["mll-lab/laravel-graphql-playground" +2.6]
 * ["nuwave/lighthouse" +4.0]
+* ["joselfonseca/lighthouse-graphql-passport-auth" 5.0.0]
 
 
 ### To run locally
@@ -20,11 +21,21 @@ Assignment project from BetterHR Interview
 - Enter `composer install` (assuming you have `composer` and its related packages installed and or configured)
 - Rename `.env.example`  to `.env` (This contains the app configs and databases settings)
 - Enter `php artisan migrate` to run migration  
+- Enter `php artisan passport:install`
 - Enter `php artisan db:seed` for test data
 - Enter `npm install`
 - Enter `npm run dev`
 - Enter `php artisan serve` to start application
 - Open http://localhost:8000 or http://127.0.0.1:8000 to access frontend vue ui
+
+### Add the following env vars to your .env from the oauth_clients table and the Laravel password grant client's id and secret
+
+```bash
+PASSPORT_CLIENT_ID=
+PASSPORT_CLIENT_SECRET=
+
+You are done with the installation!
+```
 
 ### Queries to run on (http://localhost:8000/graphql-playground) - CRUD operations on employees
 ```bash
