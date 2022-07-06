@@ -24,7 +24,7 @@ Assignment project from BetterHR Interview
 - Enter `npm install`
 - Enter `npm run dev`
 - Enter `php artisan serve` to start application
-- Open http://localhost:8000 or http://127.0.0.1:8000 to access the playground
+- Open http://localhost:8000 or http://127.0.0.1:8000 to access frontend vue ui
 
 ### Queries to run on (http://localhost:8000/graphql-playground) - CRUD operations on employees
 ```bash
@@ -109,4 +109,17 @@ mutation{
 	}
 }
 
+```
+
+
+##If You find the following message, please do the follow the step to fixed
+NOTE:
+library: 'digital envelope routines',
+reason: 'unsupported',
+code: 'ERR_OSSL_EVP_UNSUPPORTED'
+
+###fixed to run
+``` 
+export NODE_OPTIONS=--openssl-legacy-provider
+npm run dev
 ```
