@@ -112,7 +112,7 @@ mutation{
 ```
 
 
-##If You find the following message, please do the follow the step to fixed
+## If You find the following message, please do the follow the step to fixed
 
 NOTE: find this message
 
@@ -121,7 +121,7 @@ library: 'digital envelope routines',
 reason: 'unsupported',
 code: 'ERR_OSSL_EVP_UNSUPPORTED'
 ```
-###fixed to run
+### Fixed to run
 ```bash
 export NODE_OPTIONS=--openssl-legacy-provider
 npm run dev
