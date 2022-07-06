@@ -28,7 +28,7 @@ Assignment project from BetterHR Interview
 - Enter `php artisan serve` to start application
 - Open http://localhost:8000 or http://127.0.0.1:8000 to access frontend vue ui
 
-### Add the following env vars to your .env from the oauth_clients table and the Laravel password grant client's id and secret
+### Note: Add the following env vars to your .env from the oauth_clients table and the Laravel password grant client's id and secret for Passport Authentication
 
 ```bash
 PASSPORT_CLIENT_ID=
