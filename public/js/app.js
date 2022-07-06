@@ -1948,7 +1948,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 page = _arguments.length > 0 && _arguments[0] !== undefined ? _arguments[0] : 1;
                 _context.next = 3;
-                return axios.get("/employees?page=".concat(page)).then(function (_ref) {
+                return axios.get("/api/employees?page=".concat(page)).then(function (_ref) {
                   var data = _ref.data;
                   _this.employees = data;
                 })["catch"](function (_ref2) {

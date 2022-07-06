@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 
+Route::prefix('api')->group(function () {
+    Route::get('/employees',[EmployeeController::class,'index']);
+});
 
-
-Route::get('/employees',[EmployeeController::class,'index']);

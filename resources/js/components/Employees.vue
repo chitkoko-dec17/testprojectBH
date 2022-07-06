@@ -62,7 +62,7 @@
         },
         methods:{
             async list(page=1){
-                await axios.get(`/employees?page=${page}`).then(({data})=>{
+                await axios.get(`/api/employees?page=${page}`).then(({data})=>{
                     this.employees = data
                 }).catch(({ response })=>{
                     console.error(response)
